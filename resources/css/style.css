@@ -333,3 +333,30 @@ a, a:hover, a:focus, a:active {
 .smallerem img {
     padding: 16px;
 }
+
+/* Footer */
+
+#footercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    padding: 0 32px;
+}
+
+#footercontainer {
+    color: rgb(77, 74, 74);
+    opacity: 0.8;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav li a {
+    color:rgb(77, 74, 74);
+    opacity: 0.8;
+    padding-left: 20px;
+}
