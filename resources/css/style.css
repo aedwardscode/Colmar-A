@@ -11,7 +11,7 @@ header {
     z-index: 100;
     width: 100%;
     background-color: white;
-    padding: 0 10px;
+    padding: 0 25px;
     top: 0;
     left: 0;
     right: 0;
@@ -20,6 +20,7 @@ header {
 .headercontainer {
     display: flex;
     justify-content: space-between;
+    width: 95%;
 }
 
 .headercontainer .logoname {
@@ -39,8 +40,6 @@ header {
 .navigation ul {
     display: flex;
     list-style: none;
-    float: right;
-    justify-content: flex-end;
 }
 
 .navigation li {
@@ -70,6 +69,7 @@ a, a:hover, a:focus, a:active {
     flex-direction: row;
     z-index: -1;
     align-items: center;
+    width: 100%;
 }
 
 #banner img {
@@ -109,9 +109,9 @@ a, a:hover, a:focus, a:active {
 #feature {
     display: flex;
     padding: 32px 24px;
-    position: relative;
     flex-direction: row;
     width: 100%;
+    justify-content: flex-start;
 }
 
 .first {
@@ -150,14 +150,186 @@ a, a:hover, a:focus, a:active {
 
 .smallbox {
     display: flex;
-    width: 75%;
+    width: 90%;
     flex-direction: row;
     padding-bottom: 24px;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .smallbox img {
-    padding-right: 30px;
-    width: 55%;
+    max-width: 50%;
     height: auto;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+.smallboxtext h3 {
+    width: 100%;
+    color: rgb(77, 74, 74);
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.smallboxtext p {
+    color: rgb(77, 74, 74);
+    font-size: 1.15rem;
+    width: 100%;
+    font-weight: lighter;
+}
+
+.smallboxtext p a {
+    color: rgb(9, 157, 243);
+}
+
+#guestlecture {
+    background-color: rgb(218, 216, 216);
+    padding-top: 16px;
+    padding-left: 5px;
+}
+
+/* Course Section */
+
+#coursescontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 72px;
+    width: 95%;
+    background-color:rgb(219, 216, 216);
+}
+
+#coursescontainer h2 {
+    text-align: center;
+    padding-bottom: 32px;
+    color:rgb(77, 74, 74);
+    font-size: 3.5rem;
+}
+
+.courselist {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.coursebox {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    margin: 32px 32px;
+    background-color: white;
+    padding-bottom: 24px;
+}
+
+.coursebox img {
+    height: auto;
+    width: 100%;
+}
+
+.coursebox h4 {
+    color:rgb(77, 74, 74);
+    padding-left: 16px;
+    font-size: 1.85rem;
+    font-weight: lighter;
+}
+
+.coursebox p {
+    color:rgb(77, 74, 74);
+    padding-top: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* Exhibit Section */
+
+#exhibit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+#exhibit h2 {
+    color:rgb(77, 74, 74);
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 3.5rem;
+}
+
+.esections {
+    display: flex;
+    flex-direction: row;
+}
+
+.firste {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-right: 24px;
+}
+
+.firste video {
+    width: 100%;
+}
+
+.firstetext {
+    align-content: center;
+}
+
+.firste h4 {
+    color: rgb(77, 74, 74);
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+.firste p {
+    color: rgb(77, 74, 74);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    width: 95%;
+    opacity: 0.8;
+}
+
+.smallerem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.smallere {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+}
+
+.smalleretext {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    color:rgb(77, 74, 74);
+    align-content: center;
+    padding-top: 40px;
+}
+
+.smalleretext h4 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+#firstsmallere {
+    background-color: rgb(219, 216, 216);
+}
+
+.smalleretext p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+.smallerem img {
+    padding: 16px;
 }
