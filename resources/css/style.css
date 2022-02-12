@@ -1,3 +1,60 @@
 html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    position: relative;
 }
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headercontainer .logoname {
+    display: flex;
+}
+
+.headercontainer h3 {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.headercontainer span {
+    color: grey;
+    font-weight: 485;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    float: right;
+    justify-content: flex-end;
+}
+
+.navigation li {
+    padding-left: 2rem;
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+nav a {
+    vertical-align: center;
+    float: right;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Banner */
+
