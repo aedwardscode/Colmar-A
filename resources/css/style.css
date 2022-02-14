@@ -363,9 +363,9 @@ nav li a {
     padding-left: 20px;
 }
 
-/* Portrait and Landscape */
+/* Mobile Screen */
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 736px) {
     .headercontainer {
         width: 50%;
     }
@@ -393,7 +393,7 @@ nav li a {
     }
 }
 
-@media only screen and (min-width: 759px) {
+@media only screen and (min-width: 737px) {
     #mobilescreen {
         display: none;
     }
