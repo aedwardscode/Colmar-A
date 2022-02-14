@@ -42,10 +42,12 @@ header {
     list-style: none;
 }
 
-.navigation li {
+.navigation #mobileremoved {
     padding-left: 2rem;
     font-size: 1.25rem;
     padding-top: 10px;
+    color: rgb(77, 74, 74);
+    opacity: 0.8;
 }
 
 nav a {
@@ -359,4 +361,40 @@ nav li a {
     color:rgb(77, 74, 74);
     opacity: 0.8;
     padding-left: 20px;
+}
+
+/* Portrait and Landscape */
+
+@media only screen and (max-width: 760px) {
+    .headercontainer {
+        width: 50%;
+    }
+    .navigation a img #mobilescreen {
+        height: auto;
+        width: 100px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navigation a #mobileremoved {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .logoname h3 {
+        display: none;
+    }
+
+    .logoname img {
+        display: inline-block;
+        padding-top: 27px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (min-width: 759px) {
+    #mobilescreen {
+        display: none;
+    }
 }
