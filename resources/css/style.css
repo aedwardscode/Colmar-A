@@ -365,15 +365,17 @@ nav li a {
 
 /* Mobile Screen */
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 660px) {
     .headercontainer {
-        width: 50%;
+        height: 105px;
+        width: auto;
     }
     .navigation a img #mobilescreen {
         height: auto;
         width: 100px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        float: right;
     }
 
     .navigation a #mobileremoved {
@@ -391,9 +393,70 @@ nav li a {
         padding-top: 27px;
         padding-right: 50px;
     }
+
+    #banner {
+        width: stretch;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .bannertext {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bannertext a .starthere {
+        width: 100%;
+        margin: 0;
+        padding: 10px 50px;
+        overflow: hidden;
+    }
+
+    #feature {
+        width: 275%;
+        height: auto;
+    }
+
+    #feature .first {
+        display: none;
+    }
+
+    #feature .smallbox {
+        flex-direction: column;
+        width: cover;
+        justify-content: center;
+        display: flex;
+    }
+
+    .smallbox img {
+        max-width: 500px;
+        height: fit-content;
+    }
+
+    .smallboxtext {
+        padding-left: 30px;
+    }
+
+    #coursescontainer {
+        width: 100%;
+        background-color: white;
+    }
+
+    #coursescontainer h2 {
+        background-color: white;
+    }
 }
 
-@media only screen and (min-width: 737px) {
+@media only screen and (min-width: 661px) {
     #mobilescreen {
         display: none;
     }
