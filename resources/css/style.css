@@ -71,7 +71,7 @@ a, a:hover, a:focus, a:active {
     flex-direction: row;
     z-index: -1;
     align-items: center;
-    width: 100%;
+    width: 95%;
 }
 
 #banner img {
@@ -194,8 +194,8 @@ a, a:hover, a:focus, a:active {
 #coursescontainer {
     display: flex;
     flex-direction: column;
-    padding: 32px 72px;
-    width: 95%;
+    padding: 32px 60px;
+    width: 90%;
     background-color:rgb(219, 216, 216);
 }
 
@@ -203,7 +203,7 @@ a, a:hover, a:focus, a:active {
     text-align: center;
     padding-bottom: 32px;
     color:rgb(77, 74, 74);
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .courselist {
@@ -366,6 +366,9 @@ nav li a {
 /* Mobile Screen */
 
 @media only screen and (max-width: 660px) {
+    * {
+        overflow-x: hidden;
+    }
     .headercontainer {
         height: 105px;
         width: auto;
@@ -395,7 +398,7 @@ nav li a {
     }
 
     #banner {
-        width: stretch;
+        width: 90%;
         display: flex;
         flex-direction: column;
     }
@@ -414,16 +417,19 @@ nav li a {
         width: 100%;
     }
 
-    .bannertext a .starthere {
-        width: 100%;
+    .bannertext .starthere {
+        width: 65%;
         margin: 0;
-        padding: 10px 50px;
-        overflow: hidden;
+        padding: 10px 30px;
+        background-size: 90%;
+        background-position: left;
     }
 
     #feature {
         width: 275%;
         height: auto;
+        flex-wrap: wrap;
+        overflow-wrap: break-word;
     }
 
     #feature .first {
@@ -432,8 +438,8 @@ nav li a {
 
     #feature .smallbox {
         flex-direction: column;
-        width: cover;
-        justify-content: center;
+        width: 88%;
+        justify-content: justify;
         display: flex;
     }
 
@@ -447,12 +453,66 @@ nav li a {
     }
 
     #coursescontainer {
-        width: 100%;
+        width: 90%;
         background-color: white;
     }
 
     #coursescontainer h2 {
-        background-color: white;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 32px;
+        font-size: 3rem
+    }
+
+    .coursebox h4 {
+        text-align: justify;
+        font-size: 2rem;
+    }
+
+    .coursebox img {
+        display: none;
+    }
+
+    .coursebox p {
+        display: none;
+    }
+
+    .courselist {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coursebox {
+        background-color: rgb(221, 217, 217);
+        width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #exhibit {
+        width: 90%;
+        overflow: hidden;
+    }
+
+    #exhibit h2 {
+        text-align: center;
+    }
+
+    .firste video {
+        min-width: 500px;
+    }
+
+    .firstetext {
+        display: none;
+    }
+
+    .smallerem {
+        display: none;
+    }
+
+    #footercontainer {
+        width: 80%;
     }
 }
 
