@@ -99,7 +99,7 @@ a, a:hover, a:focus, a:active {
     color: rgb(77, 74, 74);
 }
 
-.bannertext .starthere {
+.bannertext button {
     background-color: rgb(77, 74, 74);
     text-align: center;
     color: white;
@@ -177,7 +177,7 @@ a, a:hover, a:focus, a:active {
 .smallboxtext p {
     color: rgb(77, 74, 74);
     font-size: 1.15rem;
-    width: 100%;
+    width: 95%;
     font-weight: lighter;
 }
 
@@ -332,6 +332,7 @@ a, a:hover, a:focus, a:active {
     font-size: 1.2rem;
     font-weight: lighter;
     opacity: 0.8;
+    width: 95%;
 }
 
 .smallerem img {
