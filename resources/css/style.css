@@ -36,6 +36,7 @@ header {
 .headercontainer span {
     color: grey;
     font-weight: 485;
+    font-size: 1.5rem;
 }
 
 .navigation ul {
